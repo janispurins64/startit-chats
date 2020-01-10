@@ -1,12 +1,11 @@
-from flask import Flask
-
+from flask import Flask, render_template
 
 app = Flask('app')
 
 
 @app.route('/')
 def index_page():
-  return "Sveiciens no StartIT! utt"
+  return render_template('index.html')
 
 
 if __name__ == '__main__':
