@@ -7,7 +7,11 @@
         <title>StartIT Chats</title>
         <script src="{{url_for('static',filename='chats.js')}}" type-"text/javascript"></script>
     </head>
-<body>
-    Sveiki no template! Manas izmainas 
+<body onload="lasiChatu();" class="body">
+
+    {% block saturs %}
+    {% endblock %}
+    <script src="{{ url_for('static', filename='chats.js') }}"></script>
+
 </body>
 </html>
